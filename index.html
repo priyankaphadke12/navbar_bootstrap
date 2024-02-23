@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-info pg-5" style="background-color:#99d6ff;">
+        <div class="container-fluid">
+            <img src="./bluefly_logo.jpg " alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#"> <span class="navbar-brand mb-0 h1 text-primary">BLUFLY</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-primary" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  text-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-danger" href="#">C Langauge</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">C++ Langauge</a></li>
+                            <li>
+                                <hr class="dropdown-divider text-danger">Java Langauge
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Python Langauge</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled  text-primary" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col shadow p-2 m-3  bg-light rounded">
+            <img src="./cake-1.png" class="d-block mx-auto rounded width=" 100" height="100">
+            <h1 class="text-center  fs-4 pt-2 fw-semibold">cake</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborimam dignmesinios accusantium amet
+                simpliqui velite iste.</p>
+        </div>
+        <div class="col shadow p-3 m-3  bg-light rounded">
+            <img src="./biryani.png" class="d-block mx-auto rounded width=" 100" height="100">
+            <h1 class="text-center  fs-4 pt-2 fw-semibold">Biryani</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborimam dignmesinios accusantium amet
+                simpliqui velite iste.</p>
+        </div>
+        <div class="col shadow p-3 m-3  bg-light rounded">
+            <img src="./gulabjamun.png" class="d-block mx-auto rounded width=" 80" height="100">
+            <h1 class="text-center  fs-4 pt-2 fw-semibold">Gulabjamun</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborimam dignmesinios accusantium amet
+                simpliqui velite iste.</p>
+        </div>
+        <div class="col shadow p-3 m-3  bg-light rounded">
+            <img src="./cake-2.png" class="d-block mx-auto rounded width=" 100" height="100">
+            <h1 class="text-center fs-4 pt-2 fw-semibold"> Applecake</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborimam dignmesinios accusantium amet
+                simpliqui velite iste.</p>
+        </div>
+
+    </div>
+    <hr />
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label ms-5">Email address</label>
+            <input type="email" class="form-control ms-5  w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text ms-5">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label ms-5">Password</label>
+            <input type="password" class="form-control ms-5  w-50" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input ms-5" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1 ms-5 ">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary ms-5">Submit</button>
+    </form>
+    <br>
+    <hr>
+    <label for="exampleDataList" class="form-label ms-5 fs-5">City</label>
+    <input class="form-control ms-5 w-25" list="datalistOptions" id="exampleDataList" placeholder=" search city...">
+    <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+    </datalist>
+    <br>
+    <hr>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label ms-5">Email address</label>
+        <input type="email" class="form-control ms-5  w-50" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label ms-5">Example textarea</label>
+        <textarea class="form-control ms-5  w-50" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <br>
+    <hr>
+    <div class="mb-3">
+        <label for="formFile" class="form-label ms-5">Default file input example</label>
+        <input class="form-control ms-5  w-25" type="file" id="formFile">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
